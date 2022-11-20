@@ -1,17 +1,15 @@
-version: "20.10.21"
-
+# 
+version: '3.8'
 services:
-  db-postgres-evento:
-    image: postgres:alpine
-    ports:
-      - "5432:5432"
-    container_name: "db-books"
+  postgres:
+    image: postgres:14.2-alpine
     restart: always
-    volumes:
-      - ./banco-de-dados/data
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-
-volumes:
-  banco-de-dados-evento-api:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+    # volumes:
+    #   - postgres:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+# volumes:
+#   postgres:
