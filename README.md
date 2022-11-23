@@ -18,6 +18,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 __________________________________________________________________
 
 ### ..........🚧🚧 Projeto em construção! 🏗 👷 🧱🚧..........
+- Próximas etapas a concluir !
+
+- [] Criar método Create.
+- [] Criar uma seed pro banco de dados.
+- [] Fazer testes da api.
+- [] Consumir a api rest.
+- [] Desenvolver a Interface.
+- [] Desenvolver os métodos.
+- [] Testar.
+- [] Fazer o Deploy da aplicação.
 _______________________________________________________________
 ## O layout do pojeto:
 

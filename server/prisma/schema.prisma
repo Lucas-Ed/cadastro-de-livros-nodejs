@@ -37,7 +37,7 @@ generator client {
   
   model Genre {
     id                 String   @id @default(cuid())
-    description        String  
+    description1        String  
     created            DateTime @default(now())
     modified           DateTime
   
