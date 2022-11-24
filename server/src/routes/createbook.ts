@@ -1,6 +1,10 @@
 import { fastify } from 'fastify';
 import {prisma} from "../lib/prisma"
+import { PrismaClient } from '@prisma/client';
 
+
+
+const bookcreate = new PrismaClient()/*create*/
 
 // método de adicionar livro.
  export async function booksCreate(fastify:any){
@@ -13,19 +17,22 @@ import {prisma} from "../lib/prisma"
                             } = req.body;
 
         const bookcreate = await prisma.books.create({
-            data:{
-                title, 
+            data: {
+                title,
                 isbn,
                 name,
                 description1,
+                
 
-                include:{
-                    Authors:true,
+                include: {
+                    Authors: true,
                     Genre: true,
                 }
-            }
-            // res.json(bookcreate)
-        })
-      
+            },
+          
+           
+          
+        });
+        return res.json(bookcreate)
         })
     }
