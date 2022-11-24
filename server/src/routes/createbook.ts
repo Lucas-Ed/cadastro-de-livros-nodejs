@@ -29,18 +29,3 @@ import {prisma} from "../lib/prisma"
       
         })
     }
-        // app.post(`/signup`, async (req, res) => {
-        //     const { name, email } = req.body;
-          
-        //     const result = await prisma.user.create({
-        //       data: {
-        //         name,
-        //         email,
-        //       },
-        //     });
-          
-        //     ;
-        //   });
-
-
-         

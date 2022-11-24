@@ -1,0 +1,29 @@
+// REST Client
+//busca livro
+GET http://localhost:3333/books/:id
+content-type: application/json
+###
+// Grava um novo livro no banco
+POST http://localhost:3333/book
+content-type: application/json
+
+{
+    "title": "sample",
+    " isbn": "9788533302273",
+    "name": "José" ,
+    "description1": "Ação"
+
+}
+###
+//Altera 1 livro
+PATCH http://localhost:3333/book
+content-type: application/json
+
+{
+    "title": "sample",
+    " isbn": "9788533302273",
+    "name": "José" ,
+    "description1": "Ação"
+
+}
+###
