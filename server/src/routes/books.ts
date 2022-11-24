@@ -12,6 +12,7 @@ fastify.get('/books/:id', async(request, response) => {
   const booksGet = await prisma.books.findMany({
     include:{
       authors:true,
+      genre:true,
     }
   })
   })
